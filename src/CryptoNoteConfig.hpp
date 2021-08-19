@@ -112,9 +112,9 @@ const size_t MAX_BLOCK_SIZE_INITIAL         = 20 * 1024;   // block transactions
 const size_t MAX_BLOCK_SIZE_GROWTH_PER_YEAR = 100 * 1024;  // block transactions size
 
 // P2p ports, not strictly part of consensus
-const uint16_t P2P_DEFAULT_PORT        = 58080;
-const uint16_t RPC_DEFAULT_PORT        = 58081;
-const uint16_t WALLET_RPC_DEFAULT_PORT = 58082;
+const uint16_t P2P_DEFAULT_PORT        = 58010;
+const uint16_t RPC_DEFAULT_PORT        = 58021;
+const uint16_t WALLET_RPC_DEFAULT_PORT = 58032;
 
 // We do not want runtime conversion, so compile-time converter
 constexpr PublicKey P2P_STAT_TRUSTED_PUBLIC_KEY =
@@ -151,16 +151,12 @@ constexpr PublicKey CHECKPOINT_PUBLIC_KEYS_STAGENET[] = {
 };
 
 const char *const SEED_NODES[] = {
-    "207.180.200.250:58080",
-    "207.180.200.250:57080",
-    "107.172.43.135:58080",
-    "144.76.186.203:58080"
+    "82.223.203.210:58010",
+    "82.223.13.179:58010"
 };
 const char *const SEED_NODES_STAGENET[] = {
-    "207.180.200.250:58080",
-    "207.180.200.250:57080",
-    "107.172.43.135:58080",
-    "144.76.186.203:58080"
+    "82.223.13.179:58010",
+    "82.223.203.210:58010"
 };
 // testnet will have no seed nodes
 
